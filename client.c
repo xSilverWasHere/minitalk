@@ -6,13 +6,13 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 11:25:51 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/11/10 09:52:10 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/11/10 10:00:17 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-volatile sig_atomic_t	g_g_bit_received;
+volatile sig_atomic_t	g_bit_received;
 
 static void	send_bit(int pid, int bit)
 {

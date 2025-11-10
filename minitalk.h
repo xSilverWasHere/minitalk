@@ -6,7 +6,7 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 11:21:50 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/10/29 15:46:06 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/11/10 10:11:00 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@
 # include <unistd.h>
 # include <signal.h>
 # include <stdlib.h>
-# include "../libft/libft.h"
+# include "libft/libft.h"
 
 #endif

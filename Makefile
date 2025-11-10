@@ -6,7 +6,7 @@
 #    By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/29 11:22:56 by jpedro-g          #+#    #+#              #
-#    Updated: 2025/10/29 15:45:13 by jpedro-g         ###   ########.fr        #
+#    Updated: 2025/11/10 10:10:31 by jpedro-g         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,14 +21,14 @@ CLIENT_OBJS := $(CLIENT_SRC:%.c=%.o)
 CC = cc
 RM = rm -f
 
-LIBFT = ../libft/libft.a
+LIBFT = libft/libft.a
 CFLAGS = -Wall -Wextra -Werror -g
 
 
 all: $(LIBFT) $(NAME) $(CLIENT_NAME)
 
 $(LIBFT):
-	make -C ../libft
+	make -C libft
 
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
@@ -40,12 +40,12 @@ $(CLIENT_NAME): $(CLIENT_OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	make -C ../libft/ clean
+	make -C libft/ clean
 	$(RM) $(OBJS) $(CLIENT_OBJS)
 
 fclean: clean
 	$(RM) $(NAME) $(CLIENT_NAME)
-	make -C ../libft/ fclean
+	make -C libft/ fclean
 
 re: fclean all
 
