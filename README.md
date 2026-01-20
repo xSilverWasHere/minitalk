@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/xSilverWasHere/42-project-badges/blob/main/covers/cover-minitalk.png" alt="MINITALK"/>
+  <img src="https://github.com/xSilverWasHere/42-project-badges/blob/main/covers/cover-minitalk-bonus.png" alt="MINITALK"/>
 </p>
 
 ## 🛰️ Minitalk – Signal‑Based Client/Server Communication
